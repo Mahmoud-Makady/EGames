@@ -1,0 +1,294 @@
+:root{
+    --main-color- : #20D8DA;
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: #f9f9f9;
+  }
+  .nav, .nav-two {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; 
+  }
+  .nav-two {
+    top: 60px;
+  }
+  .nav .fa-magnifying-glass {
+    right: 50px;
+    top: 14px;
+    font-size: 14px;
+    transition: color, 0.5s;
+    &:hover{
+        color: var(--main-color-) !important;
+    }
+  }
+  
+  .nav button {
+    transition:  background-color, 0.5s;
+    &:hover{
+        background-color: black;
+        border: none !important;
+    }
+  }
+  
+  .nav h3 {
+    font-family: "Open Sans", sans-serif;
+  }
+  
+  ul {
+    list-style-type: none;
+  }
+  
+  .nav-two ul li a{
+    text-decoration: none;
+    font-weight: 500;
+    transition: color, 0.5s !important;
+    &:hover {
+        color: var(--main-color-) !important;
+    }
+  }
+  
+  .nav-two a {
+    text-decoration: none;
+    transition: color, 0.5s !important;
+    &:hover {
+        color: var(--main-color-) !important;
+    }
+  }
+
+  .nav .btnnn {
+    background-color: transparent !important;
+    border: none !important; 
+    color: white;
+    transition: color , 0.5s;
+    &:hover{
+      color: #d46767;
+    }
+    }
+
+.search-box {
+    background-color: #f1f7f7;
+    border-radius: 5px;
+    padding: 5px 10px;
+    outline: none;
+    border: none;
+    width: 200px;
+    height: 40px;
+}
+
+.btn-login {
+    background-color: rgb(33, 217, 218);
+    color: white;
+    border: none;
+    border-radius: 5px;
+padding: 5px 15px;
+}
+.game-review-section {
+background-image: url('../Media/stalker-2-campfire-4k-wallpaper-uhdpaper.com-299@5@a.jpg'); /* Add your image URL */
+background-size: cover;
+background-position: center;
+position: relative;
+height: 400px;
+display: flex;
+align-items: center;
+justify-content: flex-start;
+padding: 100px;
+}
+
+.game-review-content {
+display: flex;
+align-items: center;
+color: white;
+align-items: start;
+}
+.game-review-link {
+display: flex;
+text-decoration: none; 
+}
+
+.game-review-line {
+width: 3px;
+height: 50px;
+background-color: rgb(33, 217, 218); /* Line color */
+margin-right: 15px;
+align-items: start;
+}
+
+.game-review-text {
+font-size: 32px;
+font-weight: bold;
+text-align: start;
+}
+body {
+height: 100%;
+margin: 0;
+padding: 0;
+font-family: 'Arial', sans-serif;
+background: white;
+color: #fff;
+}
+
+/* .container {
+max-width: 1200px;
+margin: auto;
+padding: 20px;
+} */
+
+.swiper {
+width: 100%;
+/* height: 70vh; */
+margin-bottom: 0px;
+}
+
+.swiper-container{
+cursor: rgb(33, 217, 218); /* Change to "grabbing" when the mouse is clicked */
+}
+.swiper-slide {
+display: flex;
+justify-content: center;
+align-items: center;
+background: #1c1c1c;
+border-radius: 10px;
+box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+transition: transform 0.3s ease-in-out;
+}
+
+.swiper-slide:hover {
+transform: scale(1.05);
+}
+
+.mySwiper .swiper-slide {
+width: 30%;
+height: 100px;
+opacity: 0.6;
+cursor: pointer;
+color: (33, 217, 218);
+transition: opacity 0.3s ease-in-out;
+border-radius: 5px;
+margin-right: 5px;
+}
+
+.mySwiper .swiper-slide-thumb-active {
+opacity: 1;
+border: 2px solid #fff;
+box-shadow: 0 4px 10px rgba(255, 255, 255, 0.3);
+}
+
+img {
+width: 100%;
+height: auto;
+border-radius: 10px;
+}
+.progress {
+height: 15px;
+position: relative;
+}
+/* .progress-bar {
+background-color: rgb(33, 217, 218); 
+} */
+.progress-bar {
+    width: 0; /* تبدأ من الصفر */
+    background: linear-gradient(90deg, #21d9da, #1ba5a6);
+    animation: load 1.5s ease-in-out forwards;
+    height: 100%;
+    border-radius: 10px;
+}
+
+@keyframes load {
+    from {
+        width: 0;
+    }
+    to {
+        width: var(--progress-width); /* يتم ضبطها حسب كل شريط */
+    }
+}
+
+.progress-label {
+display: flex;
+justify-content: space-between;
+align-items: center;
+margin-top: 5px;
+font-weight: 500;
+color: black;;
+}
+.row {
+    margin-bottom: 0;
+}
+
+.col-6 p {
+    color: #00d1c1;
+}
+
+.range {
+    background-color: #0C0F11;
+}
+
+.range span {
+    color:  rgb(147, 147, 147) !important;
+}
+
+.range .progress {
+    background-color: rgb(206, 200, 200) !important;
+}
+
+.footer .item a {
+    text-decoration: none;
+    color: #9e9999;
+    transition: color, 0.5s;
+    line-height: 2;
+    &:hover{
+      color: var(--main-color-) !important;
+    }
+  }
+  
+  .footer .item ul li {
+    margin-bottom: 5px;
+  }
+  
+  .footer .item p {
+    line-height: 30px;
+    color: #9e9999;
+  }
+  
+  .footer2 p {
+    transition: color,0.5s;
+    cursor: pointer;
+    font-size: 15px;
+    &:hover{
+      color: var(--main-color-) !important;
+    }
+  }  
+  
+  .footer2 span {
+    transition: color,0.5s;
+    cursor: pointer;
+    font-size: 15px;
+    &:hover{
+      color: var(--main-color-) !important;
+    }
+  }  
+  
+  
+  .footer2 li a {
+    text-decoration: none;
+  
+    transition: color, 0.5s;
+    &:hover{
+      color: var(--main-color-) !important;
+    }
+  }
+  
+  .footer {
+    background-image: url(../Media/320f34995da73be0b9b645ed34e756eb.jpg);
+    background-size: cover;
+  }
+  
+  
+  .footer2 p,a,span {
+    color: #9e9999;
+  }

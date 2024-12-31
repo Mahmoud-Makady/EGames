@@ -1,0 +1,242 @@
+:root{
+    --main-color : #20D8DA;
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: #f9f9f9;
+    }
+
+  .nav, .nav-two {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; 
+  }
+  .nav-two {
+    top: 60px;
+  }
+  .nav .fa-magnifying-glass {
+    right: 50px;
+    top: 14px;
+    font-size: 14px;
+    transition: color, 0.5s;
+    &:hover{
+        color: var(--main-color) !important;
+    }
+  }
+  
+  .nav .btnnn {
+  background-color: transparent !important;
+  border: none !important; 
+  color: white;
+  transition: color , 0.5s;
+  &:hover{
+    color: #d46767;
+  }
+  }
+  
+  .nav button {
+    transition:  background-color, 0.5s;
+    &:hover{
+        background-color: black;
+        border: none !important;
+    }
+  }
+  
+  .nav h3 {
+    font-family: "Open Sans", sans-serif;
+  }
+  
+  ul {
+    list-style-type: none;
+  }
+  
+  .nav-two ul li a{
+    text-decoration: none;
+    font-weight: 500;
+    transition: color, 0.5s !important;
+    &:hover {
+        color: var(--main-color) !important;
+    }
+  }
+  
+  .nav-two a {
+    text-decoration: none;
+    transition: color, 0.5s !important;
+    &:hover {
+        color: var(--main-color) !important;
+    }
+  }
+  
+  
+  /* End Navbar */
+
+  .game-card {
+    height: 430px;
+  }
+  .game-img {
+    width: 100%;
+    height: 75%;
+
+  }
+  .fa-solid {
+    font-size: 1.7rem;
+  }
+  .del,
+  .add {
+    border: none;
+  }
+  .del:hover .fa-solid {
+    color: rgb(124, 0, 0);
+  }
+  .add:hover .fa-solid {
+    color: rgb(0, 100, 0);
+  }
+
+  .container .wishlist {
+    transition: background-color , 0.5s ;
+    &:hover{
+      background-color: black !important;
+      border: none;
+    }
+  }
+
+  
+
+
+  .container .game-img {
+    border-radius: 5px;
+    
+    transition: transform,0.5s;
+    &:hover{
+      transform: scale(1.1);
+    }
+  }
+
+
+  .footer .item a {
+    text-decoration: none;
+    color: #9e9999;
+    transition: color, 0.5s;
+    line-height: 2;
+    &:hover{
+      color: var(--main-color) !important;
+    }
+  }
+  
+  .footer .item ul li {
+    margin-bottom: 5px;
+  }
+  
+  .footer .item p {
+    line-height: 30px;
+    color: #9e9999;
+  }
+  
+  .footer2 p {
+    transition: color,0.5s;
+    cursor: pointer;
+    font-size: 15px;
+    &:hover{
+      color: var(--main-color) !important;
+    }
+  }  
+  
+  .footer2 span {
+    transition: color,0.5s;
+    cursor: pointer;
+    font-size: 15px;
+    &:hover{
+      color: var(--main-color) !important;
+    }
+  }  
+  
+  
+  .footer2 li a {
+    text-decoration: none;
+  
+    transition: color, 0.5s;
+    &:hover{
+      color: var(--main-color) !important;
+    }
+  }
+  
+  .footer {
+    background-image: url(../Media/320f34995da73be0b9b645ed34e756eb.jpg);
+    background-size: cover;
+  }
+  
+  
+  .footer2 p,a,span {
+    color: #9e9999;
+  }
+
+
+  .main a {
+    background-color: var(--main-color) !important;
+    border: none;
+    transition: background-color, 0.5s !important ;
+    &:hover{
+      background-color: #000 !important;
+    }
+  }
+  
+  .card-body {
+    opacity: 0;
+    transition: opacity, 0.5s;
+    &:hover{
+      opacity: 1;
+    }
+  }
+  
+  
+  .main .card {
+    height: 50vh;
+    cursor: pointer;
+    box-shadow: 0 8px 12px -4px rgba(87, 86, 86, 0.705),
+      0 4px 8px -2px rgba(207, 66, 66, 0.15);
+    transition:transform, opacity, 0.7s ;
+    
+    &:hover{
+      transform: scale(1.1);
+   
+    }
+  }
+  
+  .card-title {
+    text-align: start;
+    background-color: #47424266;;
+    width: fit-content;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    color: #e3b6b6;
+    font-family: "Orbitron", serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    
+  }
+  
+  .playBtn {
+    /* top: 200px !important; */
+    left: 50%;
+    transform: translateX(-50%);
+    top: 240px;
+  }
+  
+  .addd {
+    right: 0px;
+    top: 15px;
+    color:#992424;
+    border: none;
+    transition: color, 0.5s;
+   &:hover{
+    color: black !important;
+   }
+  }
+  
