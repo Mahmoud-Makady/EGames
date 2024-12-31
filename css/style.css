@@ -77,8 +77,8 @@ ul {
 
 
 .game-nav {
-  background-image: url(../Media/320f34995da73be0b9b645ed34e756eb.jpg);
-  background-color: #0c0f11;
+  background-image: url(../Media/320f34995da73be0b9b645ed34e756eb.jpg) !important;
+  background-color: #0c0f11 !important;
   background-size: contain;
   padding: 50px 0;
 }
