@@ -122,7 +122,7 @@ function addToWishlist(id, title, thumbnail, gameUrl) {
     localStorage.setItem('wishlist', JSON.stringify(wishlist));
 
     swal({
-      title: "Added!",
+      title: "success!",
       text: `${title} has been added to your Wishlist!`,
       icon: "success",
       button: "Aww yiss",

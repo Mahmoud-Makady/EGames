@@ -249,7 +249,7 @@ function addToWishlist(id, title, thumbnail, gameUrl) {
     localStorage.setItem('wishlist', JSON.stringify(wishlist));
 
     swal({
-      title: "Added!",
+      title: "success!",
       text: `${title} has been added to your Wishlist!`,
       icon: "success",
       button: "Aww yiss",
@@ -258,7 +258,7 @@ function addToWishlist(id, title, thumbnail, gameUrl) {
   });
   } else {
     swal({
-      title: "Hey You!",
+      title: "Hey You.!",
       text: `${title} is already in your Wishlist.`,
       icon: "warning",
       button: "Ok",
