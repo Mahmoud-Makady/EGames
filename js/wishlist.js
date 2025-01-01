@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', () => {
             <div class="card-body">
               <h5 class="card-title position-relative">${game.title}</h5>
               <a href="${game.gameUrl}" target="_blank" class="btn btn-primary playBtn position-absolute ">Play Now</a>
-              <button onclick="removeFromWishlist(${game.id})" class="btn addd  position-absolute"><i class="fa-solid fa-xmark"></i></button>
+              <button onclick="removeFromWishlist(${game.id}, '${game.title}')" class="btn addd  position-absolute"><i class="fa-solid fa-xmark"></i></button>
             </div>
           </div>
         </div>`;
@@ -40,7 +40,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     swal({
         title: "Removed!",
-        text: `${title} has been deleted successfully!`,
+        text: `${title} has been removed successfully!`,
         icon: "success",
         button: "OK",
     }).then(() => {
