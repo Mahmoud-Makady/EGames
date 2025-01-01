@@ -257,12 +257,13 @@ function addToWishlist(id, title, thumbnail, gameUrl) {
       location.reload(); 
   });
   } else {
-    swal({
-      title: "Hey You.!",
-      text: `${title} is already in your Wishlist.`,
-      icon: "warning",
-      button: "Ok",
-  });
+    swal(`${title} is already in your Wishlist.`)
+  //   swal({
+  //     title: "Hey You.!",
+  //     text: `${title} is already in your Wishlist.`,
+  //     icon: "warning",
+  //     button: "Ok",
+  // });
   }
 }
 
