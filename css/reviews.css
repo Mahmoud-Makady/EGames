@@ -18,8 +18,11 @@
   .nav-two {
     top: 60px;
   }
+  .search {
+    width: 50%;
+  }
   .nav .fa-magnifying-glass {
-    right: 50px;
+    right: 30px;
     top: 14px;
     font-size: 14px;
     transition: color, 0.5s;
@@ -93,7 +96,7 @@ background-image: url('../Media/stalker-2-campfire-4k-wallpaper-uhdpaper.com-299
 background-size: cover;
 background-position: center;
 position: relative;
-height: 400px;
+height: 60vh;
 display: flex;
 align-items: center;
 justify-content: flex-start;
@@ -146,7 +149,7 @@ margin-bottom: 0px;
 }
 
 .swiper-container{
-cursor: rgb(33, 217, 218); /* Change to "grabbing" when the mouse is clicked */
+cursor: rgb(33, 217, 218); 
 }
 .swiper-slide {
 display: flex;
@@ -179,7 +182,11 @@ border: 2px solid #fff;
 box-shadow: 0 4px 10px rgba(255, 255, 255, 0.3);
 }
 
-img {
+.swiper-wrapper img {
+width: 100%;
+height: auto;
+}
+.range img {
 width: 100%;
 height: auto;
 border-radius: 10px;
@@ -292,3 +299,28 @@ color: black;;
   .footer2 p,a,span {
     color: #9e9999;
   }
+
+    /* Responsive */
+@media screen and (max-width: 991px) {
+  .nav-right {
+    position: relative;
+    top: -30px;
+  }
+  .search {
+    width: 30%;
+  }
+  .nav .fa-magnifying-glass {
+    right: 35px;
+    top: 14px;
+    font-size: 14px;
+    
+  }
+  .game-review-section {
+    height: 45vh;
+  }
+  .game-review-text,
+  .game-review-line {
+    position: relative;
+    top: 60px;
+  }
+}

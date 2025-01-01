@@ -18,8 +18,11 @@
   .nav-two {
     top: 60px;
   }
+  .search {
+    width: 50%;
+  }
   .nav .fa-magnifying-glass {
-    right: 50px;
+    right: 30px;
     top: 14px;
     font-size: 14px;
     transition: color, 0.5s;
@@ -78,7 +81,7 @@
     background-size: cover;
     background-position: center;
     position: relative;
-    height:400px;
+    height: 60vh;
     display: flex;
     align-items: center;
     justify-content: flex-start;
@@ -189,3 +192,23 @@
   .footer2 p,a,span {
     color: #9e9999;
   }
+
+  /* Responsive */
+@media screen and (max-width: 991px) {
+  .nav-right {
+    position: relative;
+    top: -30px;
+  }
+  .search {
+    width: 30%;
+  }
+  .nav .fa-magnifying-glass {
+    right: 35px;
+    top: 14px;
+    font-size: 14px;
+    
+  }
+  .game-review-section {
+    height: 45vh;
+  }
+}

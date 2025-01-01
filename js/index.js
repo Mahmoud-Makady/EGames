@@ -233,10 +233,15 @@ function changeVideo(videoSrc) {
 // _________________________
 function addToWishlist(id, title, thumbnail, gameUrl) {
   if (localStorage.getItem('loggedIn') !== 'true') {
-    swal('You must be logged in to add games to your Wishlist.');
+    swal({
+      title: "Rejected!",
+      text: 'You must be logged in to add games to your Wishlist.',
+      icon: "warning",
+      button: "Ok",
+    });
     return;
   }
-
+  
   let wishlist = JSON.parse(localStorage.getItem('wishlist')) || [];
 
   if (!wishlist.find(game => game.id === id)) {
@@ -247,12 +252,17 @@ function addToWishlist(id, title, thumbnail, gameUrl) {
       title: "Added!",
       text: `${title} has been added to your Wishlist!`,
       icon: "success",
-      button: "OK",
+      button: "Aww yiss",
   }).then(() => {
       location.reload(); 
   });
   } else {
-    swal(`${title} is already in your Wishlist.`);
+    swal({
+      title: "Hey You!",
+      text: `${title} is already in your Wishlist.`,
+      icon: "warning",
+      button: "Ok",
+  });
   }
 }
 

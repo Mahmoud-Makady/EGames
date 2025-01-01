@@ -25,9 +25,11 @@ function fetchTrending(category = '') {
   xhr.onload = function () {
     if (xhr.status === 200) {
       const data = JSON.parse(xhr.responseText);
-      console.log(data);
+      let allGames = data;
+      let limitefGames = allGames.slice(0, 200)
+      console.log(limitefGames);
       
-      displayTrendingItems(data);
+      displayTrendingItems(limitefGames);
       errorMessage.classList.add('d-none');
     } else {
       console.error('Error: ' + xhr.statusText);
@@ -53,6 +55,7 @@ function displayTrendingItems(items) {
     card.classList.add('card');
 
     const img = document.createElement('img');
+    img.setAttribute('loading', 'lazy');
     img.src = item.thumbnail || 'https://via.placeholder.com/300x450';
     img.alt = item.title || 'Untitled';
 
@@ -103,7 +106,12 @@ function displayTrendingItems(items) {
 
 function addToWishlist(id, title, thumbnail, gameUrl) {
   if (localStorage.getItem('loggedIn') !== 'true') {
-    swal('You must be logged in to add games to your Wishlist.');
+    swal({
+      title: "Rejected!",
+      text: 'You must be logged in to add games to your Wishlist.',
+      icon: "warning",
+      button: "Ok",
+    });
     return;
   }
 
@@ -117,13 +125,18 @@ function addToWishlist(id, title, thumbnail, gameUrl) {
       title: "Added!",
       text: `${title} has been added to your Wishlist!`,
       icon: "success",
-      button: "OK",
+      button: "Aww yiss",
   }).then(() => {
       location.reload(); 
   });
   } else {
-    swal(`${title} is already in your Wishlist.`);
-  }
+    swal({
+      title: "Hey You!",
+      text: `${title} is already in your Wishlist.`,
+      icon: "warning",
+      button: "Ok",
+  });
+}
 }
 
 

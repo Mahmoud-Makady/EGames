@@ -39,7 +39,7 @@
             <div class="col-8 text-center">
                 <img class="w-25 mb-3" src="./Media/logo2.png.webp" alt="logo">
             </div>
-            <div class="col-8">
+            <div class="col-lg-8 col-xs-10">
                 <div class="signup-card bg-dark p-4">
                     <h2 class="text-center text-white signup-title">Create a new account</h2>
                     <p class="text-center text-white signup-subtitle">It’s quick and easy.</p>
@@ -91,6 +91,8 @@
         </div>
     </div>
 
+    <!-- sweet alert -->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <script>
     (function () {
     'use strict';
@@ -105,10 +107,8 @@
             var password = document.getElementById('password').value;
             var gender = document.querySelector('input[name="gender"]:checked').value;
 
-            // الحصول على البيانات المخزنة في localStorage أو تعيين مصفوفة فارغة في حال عدم وجود بيانات
             let storedData = JSON.parse(localStorage.getItem('userData')) || [];
 
-            // إضافة المستخدم الجديد إلى المصفوفة
             var userData = {
                 firstName,
                 lastName,
@@ -116,11 +116,14 @@
                 password
             };
             storedData.push(userData);
-
-            // تخزين البيانات المحدثة في localStorage
+            swal({
+                        title: "Welcome!",
+                        text: 'Register successful!',
+                        icon: "success",
+                        button: "Login",
+                    });
             localStorage.setItem('userData', JSON.stringify(storedData));
 
-            // التوجيه إلى صفحة اللوجين بعد التسجيل
             window.location.href = 'login.html';
         }
         form.classList.add('was-validated');
